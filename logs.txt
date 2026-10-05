@@ -1,0 +1,93 @@
+2026-09-07 08:55:01 EventID=4624 User=john.smith LogonType=2 SourceIP=-
+2026-09-07 08:56:14 EventID=4624 User=alice.johnson LogonType=2 SourceIP=-
+2026-09-07 08:57:33 EventID=4624 User=bob.wilson LogonType=2 SourceIP=-
+2026-09-07 08:58:42 EventID=4625 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 08:58:51 EventID=4625 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 08:59:03 EventID=4624 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 09:00:12 EventID=4688 User=john.smith ParentProcess=explorer.exe NewProcess=chrome.exe
+2026-09-07 09:00:44 EventID=4688 User=alice.johnson ParentProcess=explorer.exe NewProcess=WINWORD.EXE
+2026-09-07 09:01:02 EventID=4688 User=bob.wilson ParentProcess=explorer.exe NewProcess=excel.exe
+2026-09-07 09:01:19 EventID=4688 User=finance01 ParentProcess=explorer.exe NewProcess=WINWORD.EXE
+
+2026-09-07 09:02:03 EventID=4624 User=hr01 LogonType=2 SourceIP=-
+2026-09-07 09:02:21 EventID=4624 User=itadmin LogonType=2 SourceIP=-
+2026-09-07 09:02:47 EventID=4625 User=guest LogonType=3 SourceIP=10.10.5.20
+2026-09-07 09:03:01 EventID=4625 User=guest LogonType=3 SourceIP=10.10.5.20
+2026-09-07 09:03:17 EventID=4625 User=guest LogonType=3 SourceIP=10.10.5.20
+2026-09-07 09:03:31 EventID=4624 User=service01 LogonType=3 SourceIP=10.10.4.15
+2026-09-07 09:03:55 EventID=4688 User=hr01 ParentProcess=explorer.exe NewProcess=outlook.exe
+2026-09-07 09:04:12 EventID=4688 User=itadmin ParentProcess=explorer.exe NewProcess=mmc.exe
+2026-09-07 09:04:37 EventID=4688 User=finance01 ParentProcess=WINWORD.EXE NewProcess=powershell.exe
+2026-09-07 09:04:45 EventID=4688 User=finance01 ParentProcess=powershell.exe NewProcess=certutil.exe
+
+2026-09-07 09:05:02 EventID=4688 User=finance01 ParentProcess=certutil.exe NewProcess=update.exe
+2026-09-07 09:05:17 EventID=3 Image=update.exe SourceIP=10.10.8.31 DestinationIP=185.XX.XX.77 DestinationPort=443
+2026-09-07 09:05:32 EventID=11 Image=powershell.exe TargetFilename=C:\Users\finance01\AppData\Local\Temp\update.exe
+2026-09-07 09:05:48 EventID=4624 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 09:06:02 EventID=4625 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 09:06:14 EventID=4625 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 09:06:27 EventID=4624 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 09:06:44 EventID=4688 User=finance01 ParentProcess=update.exe NewProcess=cmd.exe
+2026-09-07 09:06:59 EventID=4688 User=finance01 ParentProcess=cmd.exe NewProcess=whoami.exe
+
+2026-09-07 09:07:13 EventID=4624 User=marketing01 LogonType=2 SourceIP=-
+2026-09-07 09:07:31 EventID=4625 User=admin01 LogonType=3 SourceIP=10.10.3.44
+2026-09-07 09:07:44 EventID=4624 User=admin01 LogonType=3 SourceIP=10.10.3.44
+2026-09-07 09:08:02 EventID=4688 User=marketing01 ParentProcess=explorer.exe NewProcess=chrome.exe
+2026-09-07 09:08:21 EventID=4688 User=admin01 ParentProcess=explorer.exe NewProcess=powershell.exe
+2026-09-07 09:08:40 EventID=4688 User=admin01 ParentProcess=powershell.exe NewProcess=whoami.exe
+2026-09-07 09:08:58 EventID=4624 User=developer01 LogonType=2 SourceIP=-
+2026-09-07 09:09:13 EventID=4625 User=developer01 LogonType=3 SourceIP=10.10.7.18
+2026-09-07 09:09:29 EventID=4624 User=developer01 LogonType=3 SourceIP=10.10.7.18
+
+2026-09-07 09:10:01 EventID=4688 User=developer01 ParentProcess=explorer.exe NewProcess=python.exe
+2026-09-07 09:10:19 EventID=4688 User=developer01 ParentProcess=python.exe NewProcess=cmd.exe
+2026-09-07 09:10:37 EventID=3 Image=chrome.exe SourceIP=10.10.3.44 DestinationIP=142.250.1.1 DestinationPort=443
+2026-09-07 09:10:54 EventID=3 Image=outlook.exe SourceIP=10.10.4.20 DestinationIP=52.96.1.10 DestinationPort=443
+2026-09-07 09:11:11 EventID=11 Image=chrome.exe TargetFilename=C:\Users\john.smith\Downloads\report.pdf
+2026-09-07 09:11:28 EventID=11 Image=outlook.exe TargetFilename=C:\Users\alice.johnson\Downloads\invoice.pdf
+2026-09-07 09:11:46 EventID=4688 User=service01 ParentProcess=services.exe NewProcess=backup.exe
+2026-09-07 09:12:03 EventID=4624 User=service01 LogonType=5 SourceIP=-
+
+2026-09-07 09:12:21 EventID=4625 User=backup01 LogonType=3 SourceIP=10.10.6.11
+2026-09-07 09:12:39 EventID=4625 User=backup01 LogonType=3 SourceIP=10.10.6.11
+2026-09-07 09:12:56 EventID=4625 User=backup01 LogonType=3 SourceIP=10.10.6.11
+2026-09-07 09:13:14 EventID=4624 User=backup01 LogonType=3 SourceIP=10.10.6.11
+2026-09-07 09:13:31 EventID=4688 User=backup01 ParentProcess=explorer.exe NewProcess=7zip.exe
+2026-09-07 09:13:49 EventID=4688 User=backup01 ParentProcess=7zip.exe NewProcess=cmd.exe
+2026-09-07 09:14:07 EventID=3 Image=backup.exe SourceIP=10.10.6.11 DestinationIP=10.10.20.50 DestinationPort=445
+2026-09-07 09:14:25 EventID=11 Image=cmd.exe TargetFilename=C:\Temp\backup.bat
+2026-09-07 09:14:42 EventID=4688 User=backup01 ParentProcess=cmd.exe NewProcess=powershell.exe
+
+2026-09-07 09:15:00 EventID=4688 User=backup01 ParentProcess=powershell.exe NewProcess=certutil.exe
+2026-09-07 09:15:17 EventID=3 Image=certutil.exe SourceIP=10.10.6.11 DestinationIP=198.51.100.44 DestinationPort=443
+2026-09-07 09:15:34 EventID=4624 User=finance02 LogonType=2 SourceIP=-
+2026-09-07 09:15:51 EventID=4688 User=finance02 ParentProcess=explorer.exe NewProcess=excel.exe
+2026-09-07 09:16:08 EventID=4624 User=security01 LogonType=2 SourceIP=-
+2026-09-07 09:16:26 EventID=4688 User=security01 ParentProcess=explorer.exe NewProcess=eventvwr.exe
+2026-09-07 09:16:44 EventID=4624 User=admin02 LogonType=2 SourceIP=-
+2026-09-07 09:17:02 EventID=4688 User=admin02 ParentProcess=explorer.exe NewProcess=mmc.exe
+2026-09-07 09:17:19 EventID=4625 User=admin02 LogonType=3 SourceIP=10.10.9.21
+2026-09-07 09:17:35 EventID=4624 User=admin02 LogonType=3 SourceIP=10.10.9.21
+
+2026-09-07 09:17:52 EventID=4728 Account=finance01 Action=AddMember Group=Domain Admins Actor=finance01 Result=Success
+2026-09-07 09:18:09 EventID=4732 Account=finance01 Action=AddMember Group=Administrators Actor=finance01 Result=Success
+2026-09-07 09:18:26 EventID=4688 User=finance01 ParentProcess=cmd.exe NewProcess=net.exe
+2026-09-07 09:18:43 EventID=4688 User=finance01 ParentProcess=net.exe NewProcess=cmd.exe
+2026-09-07 09:19:01 EventID=3 Image=net.exe SourceIP=10.10.8.31 DestinationIP=10.10.20.15 DestinationPort=445
+2026-09-07 09:19:18 EventID=11 Image=net.exe TargetFilename=C:\Windows\Temp\admin_check.txt
+2026-09-07 09:19:36 EventID=4624 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 09:19:54 EventID=4625 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 09:20:11 EventID=4625 User=finance01 LogonType=3 SourceIP=10.10.8.31
+2026-09-07 09:20:29 EventID=4624 User=finance01 LogonType=3 SourceIP=10.10.8.31
+
+2026-09-07 09:20:46 EventID=4688 User=john.smith ParentProcess=explorer.exe NewProcess=notepad.exe
+2026-09-07 09:21:03 EventID=4688 User=alice.johnson ParentProcess=explorer.exe NewProcess=excel.exe
+2026-09-07 09:21:20 EventID=4624 User=bob.wilson LogonType=2 SourceIP=-
+2026-09-07 09:21:37 EventID=3 Image=chrome.exe SourceIP=10.10.5.12 DestinationIP=142.250.2.2 DestinationPort=443
+2026-09-07 09:21:55 EventID=11 Image=chrome.exe TargetFilename=C:\Users\bob.wilson\Downloads\manual.pdf
+2026-09-07 09:22:12 EventID=4624 User=hr01 LogonType=2 SourceIP=-
+2026-09-07 09:22:30 EventID=4688 User=hr01 ParentProcess=explorer.exe NewProcess=outlook.exe
+2026-09-07 09:22:48 EventID=4625 User=guest LogonType=3 SourceIP=10.10.5.20
+2026-09-07 09:23:05 EventID=4625 User=guest LogonType=3 SourceIP=10.10.5.20
+2026-09-07 09:23:22 EventID=4624 User=service01 LogonType=5 SourceIP=-
